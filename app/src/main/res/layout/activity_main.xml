@@ -31,10 +31,10 @@
                 android:id="@+id/lscore_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:text="0"
-                android:textSize="45sp"
-                android:layout_gravity="center_horizontal"/>
+                android:textSize="45sp" />
 
             <Button
                 android:id="@+id/lthree_btn"
@@ -44,7 +44,9 @@
                 android:text="+3 Points"
                 android:textSize="20sp"
                 android:paddingHorizontal="25dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:onClick="addScoreButton"
+                />
 
             <Button
                 android:id="@+id/ltwo_btn"
@@ -54,7 +56,8 @@
                 android:text="+2 Points"
                 android:textSize="20sp"
                 android:paddingHorizontal="25dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:onClick="addScoreButton"/>
 
             <Button
                 android:id="@+id/lft_btn"
@@ -64,7 +67,9 @@
                 android:text="Free Throw"
                 android:textSize="20sp"
                 android:paddingHorizontal="15dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:onClick="addScoreButton"
+                />
 
         </LinearLayout>
 
@@ -99,7 +104,8 @@
                 android:text="+3 Points"
                 android:textSize="20sp"
                 android:paddingHorizontal="25dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:onClick="addScoreButton"/>
 
             <Button
                 android:id="@+id/rtwo_btn"
@@ -109,7 +115,8 @@
                 android:text="+2 Points"
                 android:textSize="20sp"
                 android:paddingHorizontal="25dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:onClick="addScoreButton"/>
 
             <Button
                 android:id="@+id/rft_btn"
@@ -119,7 +126,8 @@
                 android:text="Free Throw"
                 android:textSize="20sp"
                 android:paddingHorizontal="15dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:onClick="addScoreButton"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -133,5 +141,6 @@
         android:paddingHorizontal="20dp"
         android:text="Reset"
         android:textAllCaps="true"
-        android:textSize="26sp"/>
+        android:textSize="26sp"
+        android:onClick="resetBtn"/>
 </LinearLayout>
