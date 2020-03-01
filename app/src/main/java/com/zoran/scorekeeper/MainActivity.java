@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    }
+
+    private void assignView(){
         left3 = (Button) findViewById(R.id.lthree_btn);
         left2 = (Button) findViewById(R.id.ltwo_btn);
         left1 = (Button) findViewById(R.id.lft_btn);
@@ -32,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         lScore_text_view = (TextView) findViewById(R.id.lscore_text_view);
         rScore_text_view = (TextView) findViewById(R.id.rscore_text_view);
     }
-
 
     public void resetBtn(View view){
             lScore_text_view.setText("0");
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addScoreBtn(View view){
+        assignView();
         if (view == left1){
             addScore(1,"left");
         }
@@ -70,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addScore(int num,String rightOrLeft){
+        assignView();
         int lScore=0,rScore=0;
 
 
